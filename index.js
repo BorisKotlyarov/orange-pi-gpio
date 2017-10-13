@@ -14,6 +14,10 @@ class Gpio {
         return this.cmd(`gpio mode ${this.pin} ${this.mode}`);
     }
 
+    read(){
+        return this.cmd(`gpio read ${this.pin}`);
+    }
+
     write(value){
         return this.cmd(`gpio write ${this.pin} ${value}`);
     }
