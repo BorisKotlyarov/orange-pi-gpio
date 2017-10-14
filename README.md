@@ -14,7 +14,7 @@ chmod +x ./build
 sudo ./build
 ```
 
-## Install Module##
+## Install Module ##
 
 ```cmd
 npm i orange-pi-gpio
