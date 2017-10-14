@@ -1,5 +1,8 @@
+#orange-pi-gpio#
+This module allows you to easily manage GPIO pins on your **Orange PI PC** using **Node.js**
+
 ## Before Install ##
-You need to make sure that WiringOP is installed on your Orange PI PC.
+You need to make sure that **WiringOP** is installed on your **Orange PI PC**.
 If not, then you need to install it.
 To do this, run the following commands:
 
