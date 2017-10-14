@@ -1,4 +1,4 @@
-#orange-pi-gpio#
+# orange-pi-gpio #
 This module allows you to easily manage GPIO pins on your **Orange PI PC** using **Node.js**
 
 ## Before Install ##
@@ -14,7 +14,7 @@ chmod +x ./build
 sudo ./build
 ```
 
-## Install ##
+## Install Module##
 
 Command line
 ```bash
@@ -27,16 +27,16 @@ or package.json
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
-    "gpio":"git+hhttps://github.com/BorisKotlyarov/orange-pi-gpio.git"
+    "orange-pi-gpio":"git+hhttps://github.com/BorisKotlyarov/orange-pi-gpio.git"
   }
 }
 ```
 
-## Use ##
+## Usage ##
 
 **Blink app**
 ```javascript
-const Gpio = require('gpio');
+const Gpio = require('orange-pi-gpio');
 
 let gpio5 = new Gpio({pin:5, mode: 'out', ready: ()=>{
     let value = 1;
@@ -61,7 +61,7 @@ let gpio5 = new Gpio({pin:5, mode: 'out', ready: ()=>{
 
 **read**
 ```javascript
-const Gpio = require('gpio');
+const Gpio = require('orange-pi-gpio');
 
 let gpio5 = new Gpio({pin:5});
 
@@ -74,7 +74,7 @@ gpio5.read()
 
 **write**
 ```javascript
-const Gpio = require('gpio');
+const Gpio = require('orange-pi-gpio');
 
 let gpio5 = new Gpio({pin:5});
 
