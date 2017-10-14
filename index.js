@@ -15,7 +15,10 @@ class Gpio {
     }
 
     read(){
-        return this.cmd(`gpio read ${this.pin}`);
+        return this.cmd(`gpio read ${this.pin}`)
+            .then((state)=> {
+                return state.replace(/[^\d]/gm,'');
+            });
     }
 
     write(value){
