@@ -1,3 +1,16 @@
+## Before Install ##
+You need to make sure that WiringOP is installed on your Orange PI PC.
+If not, then you need to install it.
+To do this, run the following commands:
+
+```cmd
+git clone https://github.com/zhaolei/WiringOP.git -b h3
+
+cd WiringOP
+chmod +x ./build
+sudo ./build
+```
+
 ## Install ##
 
 Command line
