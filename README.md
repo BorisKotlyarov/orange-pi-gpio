@@ -16,20 +16,8 @@ sudo ./build
 
 ## Install Module##
 
-Command line
-```bash
-npm i git+hhttps://github.com/BorisKotlyarov/orange-pi-gpio.git
-```
-or package.json
-```json
-{
-  "name": "yourAppName",
-  "version": "1.0.0",
-  "main": "index.js",
-  "dependencies": {
-    "orange-pi-gpio":"git+hhttps://github.com/BorisKotlyarov/orange-pi-gpio.git"
-  }
-}
+```cmd
+npm i orange-pi-gpio
 ```
 
 ## Usage ##
